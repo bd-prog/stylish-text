@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.mosaphir.cooltexx",
+    "sha256_cert_fingerprints":
+    ["21:A2:D9:04:88:D7:51:F8:FA:C1:03:F4:5A:65:95:43:A0:01:63:4A:D1:F2:57:1F:2A:71:69:D9:3E:AE:44:64"]
+  }
+}]
