@@ -3,10 +3,13 @@
 <html>
     <head>
     <meta charset="utf-8">
-    
+    <base href="/" />
   <!-- Primary Meta Tags -->
   <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#181818" />
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f3f3f3" />
+    <link rel="icon" href="/assets/icons/icon_24.png" type="image/png" />
+    <link rel="manifest" href="/manifest.json" />
     <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
    <link rel="stylesheet" href="css/font-awesome.min.css">
       <script src="jquery.min.js"></script>
@@ -749,6 +752,12 @@ swal({
             //console.log(e);
         });
         </script>
-        <script type="text/javascript" src="cordova.js"></script>
+        <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register(
+        '/sw.js'
+      );
+    }
+  </script>
         </body>
         </html>
